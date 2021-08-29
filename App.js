@@ -41,7 +41,7 @@ export default function App() {
     <View style={styles.screen}>
       <Button title="Add New Goal" onPress={() => setIsAddMode(true)} />
       <View style={styles.Goalsdescription}>
-        <Text style={{ fontWeight: "bold", color: "#f0f" }}>Your Goals</Text>
+        <Text style={styles.TextDecor}>Your Goals</Text>
       </View>
       <GoalInput
         visible={isAddMode}
@@ -66,10 +66,18 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: {
     marginTop: 15,
-    padding: 48,
+    padding: 35,
   },
   Goalsdescription: {
     padding: 10,
     alignItems: "center",
+  },
+  TextDecor: {
+    fontWeight: "bold",
+    color: "#f0f",
+    fontSize: 25,
+    textAlign: "center",
+    backgroundColor: "#000",
+    width: "80%",
   },
 });
